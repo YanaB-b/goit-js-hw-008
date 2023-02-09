@@ -34,6 +34,6 @@ function onFormSubmit (event) {
     const formData = new FormData (form);
     formData.forEach((value, name) =>
     console.log(`${name}:`, value));
-    event.targer.reset();
+    event.target.reset();
     localStorage.removeItem(STORAGE_KEY);
 }
